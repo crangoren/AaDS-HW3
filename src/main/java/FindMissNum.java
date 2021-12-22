@@ -7,14 +7,14 @@ public class FindMissNum {
         int start = arr[0];
         int end = arr.length;
 
+
         if (arr[end - 1] != end) {
             System.out.println(arr[end - 1]);
         } else if (start > 1) {
             System.out.println(start);
         }
-
         while ((end - start) != 1) {
-            int center = arr[end - 1] / 2;
+            int center = start + (arr[end - start] / 2);
             if ((arr[end - 1] - arr[start] == 1) && (end - start != 1)) {
                 System.out.println(end - 1);
                 return;

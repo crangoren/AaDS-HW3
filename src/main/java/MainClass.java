@@ -12,5 +12,15 @@ public class MainClass {
 
     public static void main(String[] args) {
 
+        int[] arr1 = new int[]{1, 2, 3, 5, 6, 7, 8, 9, 10};
+        int[] arr2 = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20};
+        int[] nullArr = new int[0];
+        FindMissNum.getMissNum(arr1);
+        FindMissNum.getMissNum(arr2);
+        FindMissNum.getMissNum(nullArr);
+
+
+
+
     }
 }
